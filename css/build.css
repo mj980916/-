@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+ul, ol, li{list-style: none;}
+
+a{text-decoration: none; color: inherit;}
+
+body{background-color: #f2f2f2; color: #333;
+    font-family: Arial, "맑은 고딕", Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#wrap{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*header 영역*/
+#header{
+    height: 100px;
+    background-color: beige;
+}
+
+.logo{
+    float: left;
+    width: 200px;
+    height: 100px;
+    padding-top: 30px;
+}
+
+.logo a{}
+
+.logo a img{
+
+}
+
+.nav{
+    float: right;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+.main{}
+
+.main > li{
+    float: left;
+    position: relative;
+}
+
+.main > li > a{
+    display: block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #ff5050;
+    font-size: 18px;
+    font-weight: bold;
+    color: beige;
+}
+
+.main > li:hover > a{
+    background-color: orange;
+}
+
+.sub{
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    width: 100%;
+    z-index: 20;
+    display: none;
+
+}
+
+.sub li{}
+
+.sub li a{
+    display: block;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    background-color: rgb(255, 198, 177);
+}
+
+.sub li a:hover{
+    background-color: coral;
+}
+
+.sub_bg{
+    width: 1200px;
+    height: 130px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-color: rgb(255, 198, 177);
+    z-index: 10;
+    display: none;
+}
+
+/*container 영역*/
+#container{
+    height: 500px;  
+    /* background-color: silver; */
+}
+
+/* view & fade 영역*/
+.view{
+    height: 300px;
+}
+
+.fade{
+    height: 300px;
+    position: relative;
+}
+.fade li{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+}
+
+.fade li a{}
+
+.fade li a img{}
+
+/*contents 영역*/
+.contents{}
+
+.contents > div{
+    width: 400px;
+    height: 200px;
+    float: left;
+}
+
+.contents h2{
+    width: 100px;
+    height: 35px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    line-height: 35px;
+    background-color: coral;
+    border-radius: 15px 15px 0 0;
+}
+
+.contents ul{
+    width: 100%;
+    height: 165px;
+    background-color: coral;
+    border-radius: 0 10px 10px;
+    padding: 10px;
+}
+
+.notice{}
+
+.notice ul{}
+
+.notice ul li{
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px dotted black;
+}
+
+.notice ul li a{
+    float: left;
+    width: 75%;
+
+    /* 넘치는 글을 잘라주고 넘치는 글자 숨겨주고 ...으로 바꿔주는 명령어 *위드값 꼭 존재해야함!!! */
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.notice ul li span{
+    float: right;
+}
+
+
+.gallery{}
+
+.gallery ul{
+    text-align: center;
+}
+
+.gallery ul li{
+    display: inline-block;
+}
+
+.gallery ul li a{}
+
+.gallery ul li a img{
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+
+.gallery ul li a img:hover{
+    opacity: 1;
+}
+
+.baro{}
+
+.baro p{
+    height: 165px;
+    background-color: coral;
+    padding: 4px 0;
+}
+
+.baro p a{}
+
+.baro p a img{}
+
+
+/*footer 영역*/
+#footer{
+    height: 100px;
+    background-color: rgb(168, 135, 135);
+}
